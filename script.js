@@ -46,7 +46,7 @@ restartBtn.addEventListener('click', () => {
     board.fill(""); 
     gameOver = false;
     count = 1;
-    // result.innerText = "Result"; 
+    result.innerText = ""; 
 
     for (let i = 0; i < itemContainer.length; i++) {
         itemContainer[i].innerText = "";
