@@ -93,7 +93,6 @@ h2 {
 }
 
 #result {
-    margin-top: 30px;
     color: white;
     font-style: italic;
     font-size: 2rem;
@@ -181,6 +180,9 @@ h2 {
         height: 70px;
     }
 
+    #result{
+        margin: 80px 0 0 0;
+    }
     #final #restart {
         padding: 8px 12px;
     }
