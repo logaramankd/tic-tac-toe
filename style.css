@@ -60,7 +60,7 @@ h2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 70px;
-    border-radius: 50px;
+    border-radius: 50% 10% 50% 10% / 10% 50% 10% 50%;
     box-shadow: 5px 10px 18px rgba(222, 224, 225, 0.912);
 }
 
