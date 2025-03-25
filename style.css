@@ -5,12 +5,7 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.full-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100dvh;
+body{
     background: linear-gradient(270deg,
             rgba(71, 76, 180, 0.912),
             rgba(98, 147, 233, 0.5),
@@ -19,6 +14,26 @@
             rgba(219, 163, 203, 0.504));
     background-size: 400% 400%;
     animation: bgAnimation 10s infinite linear;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+.logo img{
+    width: 5rem;
+    height: 5rem
+}
+.logo h4{
+    font-size: 2rem;
+}
+
+.full-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 80dvh;
 }
 
 @keyframes bgAnimation {
@@ -47,14 +62,6 @@ h2 {
     padding: 70px;
     border-radius: 50px;
     box-shadow: 5px 10px 18px rgba(222, 224, 225, 0.912);
-    background: linear-gradient(270deg,
-    rgba(71, 76, 180, 0.912),
-    rgba(98, 147, 233, 0.5),
-    rgba(71, 178, 180, 0.912),
-    rgba(143, 71, 70, 0.21),
-    rgba(219, 163, 203, 0.504));
-    background-size: 400% 400%;
-    animation: bgAnimation 10s infinite linear;
 }
 
 @keyframes bgAnimation {
@@ -73,7 +80,7 @@ h2 {
 
 .item-container .items {
     cursor: pointer;
-    background-color: rgb(206, 192, 180);
+    background-color: rgba(255, 255, 254, 0.5);
     border: 1px solid rgb(0, 0, 0);
     margin: 2px;
     width: 120px;
@@ -88,7 +95,7 @@ h2 {
 
 .item-container .items:hover {
     box-shadow: 5px 10px 15px white;
-    background: linear-gradient(to right, rgba(212, 255, 0, 0.5), rgba(214, 243, 70, 0.5));
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(70, 243, 226, 0.5));
     transform: rotate(90deg);
 }
 
@@ -114,12 +121,12 @@ h2 {
     border: 2px solid white;
     border-radius: 50% 10% 50% 10% / 10% 50% 10% 50%;
     padding: 20px 30px;
-    background:linear-gradient(270deg,
-    rgba(71, 76, 180, 0.912),
-    rgba(98, 147, 233, 0.5),
-    rgba(71, 178, 180, 0.912),
-    rgba(143, 71, 70, 0.21),
-    rgba(219, 163, 203, 0.504));
+    background: linear-gradient(270deg,
+            rgba(71, 76, 180, 0.912),
+            rgba(98, 147, 233, 0.5),
+            rgba(71, 178, 180, 0.912),
+            rgba(143, 71, 70, 0.21),
+            rgba(219, 163, 203, 0.504));
     background-size: 400% 400%;
     animation: bgAnimation 10s infinite linear;
 }
@@ -128,9 +135,11 @@ h2 {
     0% {
         background-position: 0% 50%;
     }
+
     50% {
         background-position: 100% 50%;
     }
+
     100% {
         background-position: 0% 50%;
     }
@@ -161,6 +170,9 @@ h2 {
 
 /* Mobile Responsive */
 @media (max-width:567px) {
+    .logo h4{
+        font-size: 1.5rem;
+    }
     h2 {
         margin-top: 60px;
         margin-bottom: 20px;
@@ -180,9 +192,10 @@ h2 {
         height: 70px;
     }
 
-    #result{
+    #result {
         margin: 80px 0 0 0;
     }
+
     #final #restart {
         padding: 8px 12px;
     }
